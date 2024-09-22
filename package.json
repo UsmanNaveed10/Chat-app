@@ -1,25 +1,33 @@
 {
-  "name": "chat-app",
+  "name": "chats",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon backend/server.js"
+    "server": "nodemon back-end/server.js"
   },
-  "type" : "module",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.6.0",
-    "socket.io": "^4.7.5"
+    "mongoose": "^8.3.2",
+    "react-script": "^2.0.5",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "autoprefixer": "^10.4.19",
+    "daisyui": "^4.10.5",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
   }
 }
