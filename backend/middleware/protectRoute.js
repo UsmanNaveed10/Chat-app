@@ -12,7 +12,7 @@ try {
     const decoded =jwt.verify(token, process.env.JWT_SECRET);
      
     if(!decoded){
-        return res.status(401).json({error :"unauthorized - invalid provided "});
+        return res.status(401).json({error :"unauthorized - invalid token provided "});
     }
 
     const user = await User.findById(decoded.userId).select("-password");

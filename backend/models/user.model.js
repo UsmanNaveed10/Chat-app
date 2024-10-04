@@ -4,27 +4,29 @@ const userSchema = new mongoose.Schema({
     
     fullname:{
         type:String,
-        required: true
+        required: true,
     },
      
     username:{
         type:String,
         required:true,
-        unique:true
+        unique:true,
     },
 
     password:{
           type:String,
           required:true,
-          minlenght:6
+          minlength:6,
+    
 
+    
     },
 
 
     gender:{
         type:String,
         required:true,
-        enum: ["male" ,"female"]
+        enum: ["male" ,"female"],
 
     },
     
@@ -34,7 +36,7 @@ const userSchema = new mongoose.Schema({
     },
 
 },    
-        // created at
+        // createdAt, updatedAt => Member since <createdAt>
     {timestamps : true }
 );
 
